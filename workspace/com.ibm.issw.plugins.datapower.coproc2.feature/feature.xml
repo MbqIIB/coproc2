@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.ibm.issw.plugins.datapower.coproc2"
+      label="CoProc2"
+      version="2.0.0"
+      provider-name="IBM"
+      plugin="com.ibm.issw.plugins.datapower.coproc2">
+
+   <description>
+      This features provides an Eclipse Run Configuration for the 
+DataPower CoProc2 service.  The DataPower CoProc2 service 
+must already be installed on the target DataPower appliance.
+This export for this service may be downloaded from 
+
+http://glezen.org/update/coproc2-2/coproc22.zip
+   </description>
+
+   <copyright>
+      (C) Copyright 2011 by IBM Corporation.  All rights reserved.
+   </copyright>
+
+   <license>
+      This prototype is licensed to IBM employees and
+to IBM customers through consultation with IBM
+Software Sales or Consulting.
+   </license>
+
+   <url>
+      <update label="CoProc2 Updates" url="http://glezen.org/update/coproc2-2"/>
+   </url>
+
+   <plugin
+         id="com.ibm.issw.plugins.datapower.coproc2"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.ibm.issw.plugins.datapower.coproc2.help"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

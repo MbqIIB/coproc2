@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="com.ibm.issw.plugins.datapower.coproc2"
+            icon="icons/coproc2e-16.gif"
+            id="com.ibm.issw.plugins.datapower.coproc2">
+      </launchConfigurationTypeImage>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="com.ibm.issw.plugins.datapower.coproc2.launcher.CoProc2Launcher"
+            delegateDescription="%launchConfigurationType.delegateDescription"
+            delegateName="CoProc2"
+            id="com.ibm.issw.plugins.datapower.coproc2"
+            modes="run"
+            name="CoProc2">
+      </launchConfigurationType>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="com.ibm.issw.plugins.datapower.coproc2.launcher.CoProc2LaunchConfigurationTabGroup"
+            description="%launchConfigurationTabGroup.description"
+            id="com.ibm.issw.plugins.datapower.coproc2.launchConfigurationTabGroup"
+            type="com.ibm.issw.plugins.datapower.coproc2">
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.ibm.issw.plugins.datapower.coproc2.pref.PreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.ibm.issw.plugins.datapower.coproc2.pref.CoProc2PreferencePage"
+            id="com.ibm.issw.plugins.datapower.coproc2.PreferencePage"
+            name="CoProc2">
+      </page>
+   </extension>
+
+
+</plugin>

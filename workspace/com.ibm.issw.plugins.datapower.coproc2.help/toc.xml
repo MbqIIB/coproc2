@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="CoProc2 DataPower Co-Processor" topic="html/index.html">
+	<topic href="html/service.html" label="CoProc2 Service"/>
+ <topic href="html/run.html" label="CoProc2 Run Configuration">
+    <topic href="html/run.html#pref" label="Preferences">
+    </topic>
+    <topic href="html/run.html#create" label="Create">
+    </topic>
+    <topic href="html/run.html#settings" label="Settings">
+       <topic href="html/run.html#connection" label="Connection Information">
+       </topic>
+       <topic href="html/run.html#stylesheet" label="Stylesheet">
+       </topic>
+       <topic href="html/run.html#inputXml" label="Input XML">
+       </topic>
+       <topic href="html/run.html#headers" label="HTTP Headers">
+       </topic>
+    </topic>
+    <topic href="html/run.html#run" label="Run">
+    </topic>
+ </topic>
+</toc>

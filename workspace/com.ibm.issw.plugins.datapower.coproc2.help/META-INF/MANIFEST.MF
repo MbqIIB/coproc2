@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: com.ibm.issw.plugins.datapower.coproc2.help; singleton:=true
+Bundle-Version: 2.0.0
+Bundle-Vendor: IBM

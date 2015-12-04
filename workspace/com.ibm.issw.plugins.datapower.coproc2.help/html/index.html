@@ -1,0 +1,45 @@
+<html>
+<head>
+   <title>CoProc2</title>
+</head>
+
+<body>
+<h1 align="center">CoProc2</h1>
+
+<p>
+The Eclipse Co-Processor provides a tool for submitting stylesheets
+to run remotely on DataPower from a developer's workspace.  It was
+composed of two parts.
+</p>
+<ul>
+<li>a service on a DataPower appliance for running submitted stylesheets</li>
+<li>a plug-in to the IDE that submitted the stylesheets</li>
+</ul>
+<p>
+As of DataPower's 3.8.2 firmware release the CoProc, as it's often
+known, has been deprecated.   This prompted an unofficial replacement
+by Hermann Stamm-Wilbrandt
+called CoProc2 to appear on the DataPower forums.  It is comprised of
+a multi-protocol gateway (MPGW) for running the stylesheet and a Java
+class for submitting it.  The Java class could be run from any command
+line.
+</p><p>
+The original co-proc was very limited in the scope of DataPower APIs
+it could accommodate in a stylesheet.  CoProc2 has no such limitation
+since it runs in a MPGW just as it would in an actual service.  The
+current drawback to CoProc2 is that it only runs from a command line.
+When developing in Eclipse, a Java run configuration can be used to
+automate this.  But its configuration is awkward.  Hence this CoProc2
+plug-in was created to provide an Eclipse run configuration specifically
+for CoProc2.
+</p><p>
+This original version of the CoProc2 feature, 1.0.0, is a prototype
+released for the purpose of gathering feedback.  It was written as a
+learning process for how to develop Eclipse run configurations; and
+much still remains to be learned.  Any suggestion and/or tips on
+developing run configurations on how to make this one more useful
+is welcome.
+</p>
+
+</body>
+</html>

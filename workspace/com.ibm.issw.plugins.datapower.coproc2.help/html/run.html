@@ -1,0 +1,106 @@
+<html>
+<head>
+   <title>CoProc2 Run Configurations</title>
+</head>
+
+<body>
+<h1 align="center">CoProc2 Run Configurations</h1>
+
+The Eclipse platform allows developers to launch various types
+of programs using using a collection of information called a
+<i>run configuration</i>.  The most common run configuration is
+used for launching Java applications.  But other run configuration
+types exist for launching
+<p>
+<ul>
+<li>Java Applets</li>
+<li>Application server test instances</li>
+<li>JUnit tests</li>
+<li>Eclipse plug-ins</li>
+<li>XSLTs</li>
+</ul>
+</p>
+The last example listed is an Eclipse launcher that executes XSLTs
+against Java XSL processors such as Saxon and Xalan.  The CoProc2
+launcher executes an XSLT on a remote DataPower appliance and returns
+the results to the console.
+<hr/>
+
+<h2><a name="pref">Preferences</a></h2>
+<p>
+Each CoProc2 run configuration requires host and port information
+for invoking the CoProc2 service running on the DataPower appliance.
+This information can be added to the CoProc2 preferences so that the 
+values are filled automatically.
+</p>
+<img src="images/preferences.gif"/>
+<hr/>
+
+<h2><a name="create"">Create a New CoProc2 Run Configuration</a></h2>
+<p>
+To create a new CoProc2 run configuration follow these steps.
+</p>
+<ol>
+<li>Select <b>Run &rarr; Run Configurations ...</b> from the 
+   workbench menu.</li>
+<li>Select <b>CoProc2</b> from the list of run configurations
+   on the left.  If CoProc2 is difficult to find, type "coproc"
+   in the filter box to narrow the choices.</li>
+<li>Right-click the entry and select <b>New</b>.</li>
+<li>Fill in the fields (described below) and click <b>Run</b>.
+</ol>
+<hr/>
+
+<h2><a name="settings">Run Configuration Settings</a></h2>
+<p>
+The screenshot below illustrates the options available for a
+CoProc2 runtime configuration.
+</p>
+<img src="images/runConfig.gif"/>
+<p>
+It contains the following sections.
+</p>
+<h3><a name="connection">CoProc2 Connection</a></h3>
+A host and port is required to connect to the CoProc2 service.  SSL is not
+supported in this prototype release.  A <b>Test Connection</b> button
+allows for testing the connection before submitting the stylesheet.
+If the connection test is successful, it should report the version
+of the CoProc service running on the DataPower appliance.
+
+<h3><a name="stylesheet">Stylesheet</a></h3>
+The stylesheet field specifies the stylesheet to be processed.  There is
+no requirement that this stylesheet be in the workspace.
+
+<h3><a name="inputXml">Input XML</a></h3>
+If the stylesheet is to process XML input, the XML input is specified here.
+Otherwise, if the stylesheet expects a NULL input context, simply check
+the <b>Set Input Context to NULL</b> box and no input is required.
+
+<h3><a name="headers">HTTP Headers</a></h3>
+<p>
+Additional HTTP header entries can be defined for the request.
+Note that <tt>Content-Type</tt> is required to be present.  It's
+created by default for each new run configuration but its value
+may be changed.  The two most popular values are 
+</p><p>
+<ul>
+<li><strong>default:</strong> <tt>text/xml; charset=utf-8</tt></li>
+<li><strong>SOAP 1.2:</strong> <tt>application/soap+xml</tt></li>
+</ul>
+</p>
+<hr/>
+
+<h2><a name="run">Run</a></h2>
+
+<p>
+Click the <b>Run</b> button in the configuration editor to run the 
+configuration.  Subsequent runs can be started directly through the
+Eclipse workbench tool bar.
+</p>
+<img src="images/chooseRun.gif"/>
+<p>
+The output is returned via the console view.
+</p>
+<hr>
+</body>
+</html>
