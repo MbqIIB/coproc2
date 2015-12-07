@@ -80,7 +80,7 @@ these steps to install the CoProc2 plugin.
 4. Click **OK** so that the CoProc2-2 update site is chosen.
     Select the CoProc2 plugin as shown below.
 
-    ![CoProc2-2 Plugin](images/installPlugin.jpg)
+    ![Select CoProc2-2](images/chooseCoProc2.png)
 
 5. Click **Next**.
 
@@ -96,7 +96,7 @@ This completes the plugin installation.
 As a verification, you can select **Help &rarr; About Eclipse**.
 You should see an entry for the CoProc2 as shown in the figure below.
 
-![CoProc2 Icon](images/coproc2Installed.jpg)
+![CoProc2 Icon](images/aboutEclipse.png)
 
 ## Overview ##
 
